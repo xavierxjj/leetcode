@@ -1,5 +1,14 @@
 # [Longest_Substring_Without_Repeating_Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-Idea:Create a new linked list to store the results, traverse the linked list, and use variables to record the carry. The time complexity is O (n) and the space complexity is O (n). (In order to make the traversal process consistent, a temporary head node is created in the linked list that stores the results, and the next node of the head node is returned.)
+Idea:  
+f(n):the length of the longest substring without repeating characters ends with nth character  
+g(n):The maximum index of the nth character in the substring from index 0 to index n-1  
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+f(x) =\begin{cases}1 &n=1\\f(n-1)+1 &n>1,g(n)<n-f(n-1)\\n-g(n)&n>1,g(n)>=n-f(n-1) )\end{cases}
+</script>
+1 if n=1  
+f(n-1)+1 if n>1 and g(n)<n-f(n-1)  
+n-g(n) if n>1 and g(n)>=n-f(n-1) )
+ 
 
-思路：新建链表存储结果，遍历链表，使用变量记录进位。时间复杂度为O(n)，空间复杂度为O(n)。（为使遍历过程处理一致，存储结果的链表新建临时头结点，返回时返回头结点的下一个节点。）
+思路：

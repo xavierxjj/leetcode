@@ -1,8 +1,8 @@
 # [Longest_Substring_Without_Repeating_Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 Idea:  
-f(n):The length of the longest substring without repeated characters and ends with the nth character   
-g(n):The largest index of the nth character in the substring from index 0 to index n-1   
+f(n):The length of the longest substring without repeated characters and ends with the nth character  
+g(n):The largest index of the nth character in the substring from index 0 to index n-1  
 Use hash table to record g(n), the time complexity is O (n) and the space complexity is O (n).  
 
 思路：  

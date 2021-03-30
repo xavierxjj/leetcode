@@ -5,7 +5,7 @@ f(n):The length of the longest substring without repeated characters and ends wi
 g(n):The largest index of the nth character in the substring from index 0 to index n-1   
 Use hash table to record g(n), the time complexity is O (n) and the space complexity is O (n).  
 
-思路：
+思路：  
 f(n):以第n个字符结尾且无重复字符的最长子字符串的长度  
 g(n):从索引0到n-1的子字符串中第n个字符出现的最大索引  
 使用hash表记录g(n)，时间复杂度为O(n)，空间复杂度为O(n)。  
